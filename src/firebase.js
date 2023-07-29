@@ -10,13 +10,12 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBwS7luXnkhMODA7lxR2BlMqMqEn4yO8ow",
-    authDomain: "chat-react-c37b2.firebaseapp.com",
-    projectId: "chat-react-c37b2",
-    storageBucket: "chat-react-c37b2.appspot.com",
-    messagingSenderId: "231230992688",
-    appId: "1:231230992688:web:fdf41276b5fa8d082318f5",
-    measurementId: "G-2DSM0JPFRH"
+    apiKey: "AIzaSyAY2SnJUwlcnIRNcaceZvqxu4NpmojlR98",
+    authDomain: "chat-reactjs-7f325.firebaseapp.com",
+    projectId: "chat-reactjs-7f325",
+    storageBucket: "chat-reactjs-7f325.appspot.com",
+    messagingSenderId: "120134096959",
+    appId: "1:120134096959:web:4949b34ff7425d6ab3408a"
 };
 
 // Initialize Firebase
