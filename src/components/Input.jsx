@@ -13,12 +13,14 @@ import {
 import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
-function Input() {
+
+const Input = () => {
   const [text, setText] = useState("");
   const [img, setImg] = useState(null);
 
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
+
   const handleSend = async () => {
     if (img) {
       const storageRef = ref(storage, uuid());
@@ -67,7 +69,6 @@ function Input() {
       },
       [data.chatId + ".date"]: serverTimestamp(),
     });
-
     setText("");
     setImg(null);
   };
@@ -77,6 +78,7 @@ function Input() {
         type="text"
         placeholder="Type something..."
         onChange={(e) => setText(e.target.value)}
+        value={text}
       />
       <div className="send">
         <img src={Attach} alt="" />
@@ -93,6 +95,6 @@ function Input() {
       </div>
     </div>
   );
-}
+};
 
 export default Input;
